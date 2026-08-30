@@ -234,15 +234,24 @@ p { max-width: 62ch; }
   background-size: 180px 180px;
   pointer-events: none;
 }
-.section--dark::before {
-  content: "";
-  position: absolute; right: var(--space-3); bottom: var(--space-3);
+.section-mark {
+  display: block;
   width: 32px; height: 28px;
+  margin: var(--space-3) 0 0 auto;
   opacity: 0.5;
-  background-image: url("../assets/brand/logomark-lilac.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: none;
+}
+@media (min-width: 900px) {
+  .section-mark { display: none; }
+  .section--dark::before {
+    content: "";
+    position: absolute; right: var(--space-3); bottom: var(--space-3);
+    width: 32px; height: 28px;
+    opacity: 0.5;
+    background-image: url("../assets/brand/logomark-lilac.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+  }
 }
 .section--dark > div { position: relative; z-index: 1; }
 .section--dark h1, .section--dark h2, .section--dark h3 { color: var(--paper); }
