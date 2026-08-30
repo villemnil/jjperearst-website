@@ -218,7 +218,7 @@ p { max-width: 62ch; }
   position: relative;
   overflow: hidden;
   border-radius: 28px;
-  padding: var(--space-5) var(--gutter);
+  padding: var(--gutter);
   background:
     radial-gradient(ellipse 65% 60% at 85% 10%, rgba(157, 141, 234, 0.14), transparent 65%),
     radial-gradient(ellipse 55% 50% at 8% 85%, rgba(43, 0, 80, 0.18), transparent 65%),
