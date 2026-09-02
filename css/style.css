@@ -384,7 +384,8 @@ main > section:last-child { border-bottom: 1px solid var(--line); }
 .toc-sidebar a.is-active { color: var(--violet-deep); border-left-color: var(--violet-deep); }
 
 .kodukord-content { display: flex; flex-direction: column; gap: var(--space-5); min-width: 0; }
-.kd-section { scroll-margin-top: calc(5.5rem + 12px); }
+.kd-section { scroll-margin-top: 175px; }
+@media (min-width: 960px) { .kd-section { scroll-margin-top: 115px; } }
 .kd-section h2 { font-size: var(--text-2xl); margin-bottom: 0.5rem; }
 .kd-section > .eyebrow { margin-bottom: 0.6rem; }
 .kd-section > p.lead { margin-bottom: var(--space-3); }
